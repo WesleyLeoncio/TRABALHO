@@ -1,0 +1,16 @@
+
+# ativar a escrita 
+RewriteEngine On
+
+# Informando que a regra é para pegar os valores e não
+# tentar acessar diretórios, arquivos e links conhecidos
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-l
+
+# Expressão regular para pegar tudo após o index.php
+# e anexar à query URL. Encerrar o .htacces
+RewriteRule ^(.+)$ index.php?url=$1 [QSA,L]
+
+# Para não navegar pelos nossos diretórios
+Options -Indexes
