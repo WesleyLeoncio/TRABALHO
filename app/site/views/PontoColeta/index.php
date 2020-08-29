@@ -22,7 +22,7 @@ if (!defined('URL')) {
             extract($this->dados['formRetorno']);
         }
         ?>
-        <form name="forContato" method="post" action="">
+        <form name="forPonto" method="post" action="">
             <div class="form-row">
                 <div class="form-group col-md-6">
                     <label for="iEmpresa">Empresa</label>
@@ -54,7 +54,7 @@ if (!defined('URL')) {
                 </div>
             </div>
             <div class="botao">
-                <button type="submit" name="formAddContato" value="Enviar" class="btn btn-outline-success">Cadastrar Ponto</button>
+                <button type="submit" name="formAddPonto" value="Enviar" class="btn btn-outline-success">Cadastrar Ponto</button>
             </div>
 
         </form>

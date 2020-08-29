@@ -20,7 +20,7 @@ class PontoColeta
         $this->dados['data_criacao'] = date("Y-m-d H:i:s");
         $this->validarDados();
         if ($this->result) {
-            $this->exeAddContato();
+            $this->exeAddPonto();
         }
     }
 
@@ -45,14 +45,14 @@ class PontoColeta
         }
     }
 
-    private function exeAddContato()
+    private function exeAddPonto()
     {
         $inserir = new \Site\models\helper\ModelsCreate();
         $inserir->exeCreate($this->tabela, $this->dados);
         if ($inserir->getResult()) {
             $this->result = true;
             $_SESSION['msg'] = "<div class=\"alert alert-success\" role=\"alert\">
-                                    Contato enviado com sucesso!
+                                    Ponto de Coleta enviado com sucesso!
                                 </div>";
         } else {
             $_SESSION['msg'] = "<div class=\"alert alert-danger\" role=\"alert\">

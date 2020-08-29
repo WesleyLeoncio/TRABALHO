@@ -16,8 +16,8 @@ class PontoColeta
 
         $this->dados = filter_input_array(INPUT_POST, FILTER_DEFAULT);
 
-        if (!empty($this->dados['formAddContato'])) {
-            unset($this->dados['formAddContato']);
+        if (!empty($this->dados['formAddPonto'])) {
+            unset($this->dados['formAddPonto']);
             $addContato = new \Site\Models\PontoColeta();
             $addContato->addContato($this->dados);
             if (!$addContato->getResult()) {
