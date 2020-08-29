@@ -8,11 +8,11 @@ if (!defined('URL')) {
 }
 
 
-class Contato
+class PontoColeta
 {
 
     private $result = false;
-    private $tabela = 'contato';
+    private $tabela = 'ponto_coleta';
 
     public function addContato(array $dados)
     {
@@ -56,7 +56,7 @@ class Contato
                                 </div>";
         } else {
             $_SESSION['msg'] = "<div class=\"alert alert-danger\" role=\"alert\">
-                                    Contato não enviado com sucesso! Erro: {$inserir->getMsg()}
+                                    Ponto de coleta não enviado com sucesso! Erro: {$inserir->getMsg()}
                                 </div>";
         }
     }

@@ -6,6 +6,9 @@ ob_start(); // limpa o buffer de redirecionamento
 define('URL', 'http://127.0.0.1/projetobase/');
 define('URLADM', 'http://127.0.0.1/projetobase/adm/');
 
+//127.0.0.1/projetobase/AdmAuth/auth
+
+
 // controller e métodos padrão
 define('CONTROLLER', 'Home');
 define('METHOD', 'index');

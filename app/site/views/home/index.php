@@ -14,9 +14,9 @@ if (!defined('URL')) {
             $count = count($this->dados['carousel']);
             for ($i = 0; $i < $count; $i++) { ?>
                 <li data-target="#myCarousel" data-slide-to="<?= $i; ?>" <?php if ($i == 0)
-                                                                            echo "class='active'"; ?>></li><?php
-                                                }
-                                                    ?>
+                                                                                echo "class='active'"; ?>></li><?php
+                                                                                                        }
+                                                                                                            ?>
         </ol>
         <div class="carousel-inner">
             <?php
@@ -29,9 +29,6 @@ if (!defined('URL')) {
                         <div class="carousel-caption <?= $posicao_text; ?>">
                             <h1><?= $titulo; ?></h1>
                             <p><?= $descricao; ?></p>
-                            <p><a class="btn btn-lg btn-<?= $cor; ?>" href="<?= $link; ?>" role="button">
-                                    <?= $titulo_botao; ?></a>
-                            </p>
                         </div>
                     </div>
                 </div>

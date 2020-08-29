@@ -265,6 +265,7 @@ INSERT INTO `contato` (`id`, `nome`, `email`, `assunto`, `mensagem`, `data_criac
 
 -- --------------------------------------------------------
 
+
 --
 -- Estrutura da tabela `noticia`
 --
