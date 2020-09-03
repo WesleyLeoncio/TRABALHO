@@ -18,9 +18,9 @@ class PontoColeta
 
         if (!empty($this->dados['formAddPonto'])) {
             unset($this->dados['formAddPonto']);
-            $addContato = new \Site\Models\PontoColeta();
-            $addContato->addContato($this->dados);
-            if (!$addContato->getResult()) {
+            $addColeta = new \Site\Models\PontoColeta();
+            $addColeta->addColeta($this->dados);
+            if (!$addColeta->getResult()) {
                 $this->dados['formRetorno'] = $this->dados;
             } else {
                 $this->dados['formRetorno'] = null;

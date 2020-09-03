@@ -14,7 +14,7 @@ class PontoColeta
     private $result = false;
     private $tabela = 'ponto_coleta';
 
-    public function addContato(array $dados)
+    public function addColeta(array $dados)
     {
         $this->dados = $dados;
         $this->dados['data_criacao'] = date("Y-m-d H:i:s");
